@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import Link from "next/link";
 
 export default function TopNavigation() {
   // const navItems = [
@@ -34,21 +35,25 @@ export default function TopNavigation() {
 
   const navItems = [
     {
-      name: "About & Contact",
+      name: "Contact",
+      route: "/order",
+    },
+    {
+      name: "About",
       route: "/order",
     },
     {
       name: "Products",
-      route: "/order",
+      route: "/products",
     },
   ];
 
   return (
-    <div className="flex fixed w-screen p-12 bg-slate-50 bg-opacity-80 z-50">
+    <div className="flex fixed w-screen py-12 px-20 bg-slate-50 bg-opacity-80 z-50 text-black font-semibold">
       <div className="flex flex-row basis-1/5"><Logo /></div>
       <div className="flex basis-4/5 flex-row-reverse gap-14 ">
         {navItems.map((navItem) => {
-          return <button key={navItem.route}>{navItem.name}</button>;
+          return <Link href={navItem.route} key={navItem.route}><button>{navItem.name}</button></Link>;
         })}
       </div>
     </div>
