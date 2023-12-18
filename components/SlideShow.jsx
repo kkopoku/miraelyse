@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import Image from "next/image";
 
 const images = [
   "/images/carousel01.jpg",
@@ -30,13 +31,25 @@ export default function SlideShow() {
 
   return (
     <div className="flex items-center justify-center gap-10">
-      <button className="p-4 px-5 rounded-full bg-slate-100 hover:text-yellow-500" onClick={prevSlide}><IoIosArrowBack /></button>
-      <img
+      <button
+        className="p-4 px-5 rounded-full bg-slate-100 hover:text-yellow-500"
+        onClick={prevSlide}
+      >
+        <IoIosArrowBack />
+      </button>
+      <Image
+        height={400}
+        width={400}
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
         className="w-96 object-cover brightness-90 rounded-lg"
       />
-      <button className="p-4 px-5 rounded-full bg-slate-100 hover:text-yellow-500" onClick={nextSlide}><IoIosArrowForward /></button>
+      <button
+        className="p-4 px-5 rounded-full bg-slate-100 hover:text-yellow-500"
+        onClick={nextSlide}
+      >
+        <IoIosArrowForward />
+      </button>
     </div>
   );
 }
