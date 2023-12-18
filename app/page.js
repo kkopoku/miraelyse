@@ -19,11 +19,6 @@ export default function Home() {
     "Your purchase includes a label card detailing the diverse beads used in our accessories, offering a glimpse into the craftsmanship and variety we offer. Elevate your style with Mira Elyse – where every accessory is a work of art, designed to make a statement."
   ]
 
-  const sliderImages = [
-    {url : "/images/carousel01.jpg"},
-    {url : "/images/carousel02.jpg"},
-    {url : "/images/carousel03.jpg"},
-  ]
 
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">

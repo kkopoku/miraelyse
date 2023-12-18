@@ -13,14 +13,14 @@ export default function Footer() {
             window.open("https://www.instagram.com/mira_elyse/?hl=en", "_blank")
           }
         >
-          <IoLogoInstagram className="text-3xl" />
+          <IoLogoInstagram className="text-3xl hover:text-yellow-500 hover:scale-110 transition-all delay-200" />
         </button>
         <button
           onClick={() =>
             window.open("https://twitter.com/mira_elyse", "_blank")
           }
         >
-          <RiTwitterXFill className="text-3xl" />
+          <RiTwitterXFill className="text-3xl hover:text-yellow-500 hover:scale-110 transition-all delay-200" />
         </button>
       </div>
 
