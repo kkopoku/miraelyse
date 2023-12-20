@@ -2,37 +2,6 @@ import Logo from "./Logo";
 import Link from "next/link";
 
 export default function TopNavigation() {
-  // const navItems = [
-  //   {
-  //     name: "About & Contact",
-  //     route: "/order",
-  //   },
-  //   {
-  //     name: "Cufflinks",
-  //     route: "/order",
-  //   },
-  //   {
-  //     name: "Pocket Squares",
-  //     route: "/order",
-  //   },
-  //   {
-  //     name: "Versatile Scarfs",
-  //     route: "/order",
-  //   },
-  //   {
-  //     name: "Earrings",
-  //     route: "/order",
-  //   },
-  //   {
-  //     name: "Bracelets",
-  //     route: "/login",
-  //   },
-  //   {
-  //     name: "Necklaces",
-  //     route: "/signin",
-  //   },
-  // ];
-
   const navItems = [
     {
       name: "About",
