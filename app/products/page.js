@@ -45,7 +45,7 @@ export default function Login() {
             {/* Necklaces */}
             <div ref={necklacesRef} className="flex flex-col w-full py-20 px-10 lg:px-32">
                 <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">Necklaces</div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-10">
                     {data.necklaces.map((item) =>
                         <div onClick={() => {
                             setSelectedProduct(item);
@@ -63,7 +63,7 @@ export default function Login() {
             {/* Versatile Scarf */}
             <div ref={versatileRef} className="flex flex-col w-full py-20 px-10 lg:px-32">
                 <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">Versatile Scarf</div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-10">
                     {data.versatileScarfs.map((item) =>
                         <div onClick={() => {
                             setSelectedProduct(item);
@@ -81,7 +81,7 @@ export default function Login() {
             {/* Pocket Squares */}
             <div ref={pocketRef} className="flex flex-col w-full py-20 px-10 lg:px-32">
                 <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">Pocket Squares</div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-10">
                     {data.pocketSquares.map((item) =>
                         <div onClick={() => {
                             setSelectedProduct(item);

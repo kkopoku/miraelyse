@@ -32,20 +32,20 @@ export default function SlideShow() {
   return (
     <div className="flex items-center justify-center gap-10">
       <button
-        className="p-4 px-5 rounded-full bg-slate-100 hover:text-yellow-500"
+        className="p-4 px-5 rounded-full bg-transparent hover:text-yellow-500"
         onClick={prevSlide}
       >
         <IoIosArrowBack />
       </button>
       <Image
-        height={400}
-        width={400}
+        height={300}
+        width={300}
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
-        className="w-96 object-cover brightness-90 rounded-lg"
+        className="object-cover brightness-90 rounded-lg"
       />
       <button
-        className="p-4 px-5 rounded-full bg-slate-100 hover:text-yellow-500"
+        className="p-4 px-5 rounded-full bg-transparent hover:text-yellow-500"
         onClick={nextSlide}
       >
         <IoIosArrowForward />

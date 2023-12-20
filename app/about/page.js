@@ -1,41 +1,80 @@
 import TopNavigation from "@/components/TopNavigation";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
       <TopNavigation />
 
-      <div className="flex flex-col w-full min-h-screen items-center justify-center px-32">
-        <p className="text-3xl">About Us</p>
-        <p className="text-center">
-          Original, trendy, defining exclusivity through finely designed
-          accessories. Introducing 'Mira Elyse', bespoke accessories crafted
-          from colorful Classic Venetian or Murano Glass Beads, known in West
-          Africa as Trade Beads, 100% Mulberry Silk, Freshwater Pearls,
-          Swarovski Beads, Tagua nut beads, and an array of Precious and
-          Semi-Precious Stones, to name a few. <br />
-          Mira Elyse jewelry is meticulously handmade using the finest beads;
-          Murano Glass Beads, handcrafted in Venice using traditional Venetian
-          bead-making techniques. Some beads are fused with 24K gold foil leaf
-          or Silver foil leaf. Our collection also features contemporary bead
-          designs like the blown glass bead. Our designs include genuine Pearls
-          grown in lakes and rivers in and around Japan... Tahitian, baroque
-          freshwater, mother of pearls, south sea pearls, Abalone pearls,
-          Swarovski pearls... In addition, we incorporate Precious and
-          Semi-Precious stones sourced from the regions of Sri Lanka. Crystals
-          from Swarovski and the Czech Republic add a touch of elegance to our
-          carefully strung pieces. Our classy yet trendy versatile scarves and
-          pocket squares are made from 100% mulberry silk twill fabrics,
-          featuring contemporary, abstract, adinkra, and ankara designs. You can
-          wear our scarves in various ways or use them as accessories on your
-          handbag. Jazz up your formal suit or kaftan outfits with our 100% silk
-          twill handmade pocket squares. Our collection includes: Necklace sets,
-          Earrings, Bracelets, Ladies scarves, Pocket squares, and Cuff links.
-          The unique combination of beads sourced from across continents, along
-          with our carefully thought-out designs, makes Mira Elyse Accessories a
-          peerless creation designed to enhance and define your style.
-        </p>
+      <div className="flex flex-row w-full min-h-screen items-center justify-center px-20 gap-10">
+        <div className="flex flex-col basis-1/2 gap-5">
+          <p className="text-4xl font-bold">ABOUT US</p>
+          <p className="font-light">
+            My name is Agnes Essandoh, CEO, artisan and designer of the
+            accessory brand Mira Elyse.
+            <br />
+            My journey began about 7 years ago when my daughter started her
+            sixth form education. Relieved from some of my motherly duties, l
+            decided to pursue a passion l had put on hold for many years. A love
+            for fashion and design was the inspiration that led to the creation
+            of the handcrafted jewellery, intricately designed scarves and
+            pocket squares and other accessories.
+            <br />
+            Each design is an attempt to capture and bring to life wells of
+            imagination and creativity, an opportunity to incorporate into our
+            pieces the uniqueness of my Ghanaian heritage and designs from other
+            Continents. My objective is to make limited quantities per design
+            for any of the collection, in order to maintain the brand’s
+            exclusivity.
+            <br />
+            Mira Elyse products are original, contemporary and vibrant. An
+            alternative to the usual “ Say it with colour and style “
+          </p>
+        </div>
+        <div className='basis-1/2 grid grid-cols-3 gap-3'>
+        <Image
+            className="brightness-75"
+            src="/images/photo02.jpg"
+            alt=""
+            height={200}
+            width={200}
+          />
+          <Image
+            className="brightness-75"
+            src="/images/photo03.jpg"
+            alt=""
+            height={200}
+            width={200}
+          /><Image
+          className="brightness-75"
+          src="/images/photo04.jpg"
+          alt=""
+          height={200}
+          width={200}
+        />
+        <Image
+          className="brightness-75"
+          src="/images/photo01.jpg"
+          alt=""
+          height={200}
+          width={200}
+        />
+        <Image
+          className="brightness-75"
+          src="/images/photo08.jpg"
+          alt=""
+          height={200}
+          width={200}
+        />
+        <Image
+          className="brightness-75"
+          src="/images/photo09.jpg"
+          alt=""
+          height={200}
+          width={200}
+        />
+        </div>
       </div>
 
       <Footer />
