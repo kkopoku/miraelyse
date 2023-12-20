@@ -49,7 +49,7 @@ export default function TopNavigation() {
   ];
 
   return (
-    <div className="flex fixed w-screen py-12 px-20 bg-slate-50 bg-opacity-80 z-10 text-black font-semibold">
+    <div className="flex sticky w-screen py-12 px-20 bg-slate-50 bg-opacity-80 z-10 text-black font-semibold">
       <div className="flex flex-row basis-1/5"><Logo /></div>
       <div className="flex basis-4/5 flex-row-reverse gap-14 ">
         {navItems.map((navItem) => {

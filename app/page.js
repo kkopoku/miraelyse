@@ -7,9 +7,9 @@ import Footer from "@/components/Footer";
 export default function Home() {
 
   const introText = [
-    "Mira Elyse is dedicated to pushing the boundaries in Jewellery making and the design of our other accessories.",
-    "Through our innovation in design and craftsmanship, we explore new frontiers of incorporating beads such as Murano Glass beads, Semi Precious stones,Swarovski beads, Freshwater Pearls and other authentic rare beads into our jewelleries. Also using different Ankara designs, contemporary abstract designs and Adinkra symbols in our exclusive ladies versatile scarves and mens pocket squares",
-    "We hold nothing back in our unique bespoke pieces. The different combination of beads in our collection from across the continents makes Mira Elyse accessories a peerless creation designed to enhance your style or give out as gift to a loved one. On the other hand our detailed designs for our scarves and pockets squares are printed on 100% mulberry silk twill fabrics with hand rolled edge finish."
+    "Mira Elyse is dedicated to pushing the boundaries in Jewellery making and the design of our other accessories. We creatively integrate Murano Glass beads, Semi Precious stones, Swarovski beads, Freshwater Pearls, and other rare authentic beads into our jewelry through innovative design and craftsmanship.",
+    "Also using different Ankara designs, contemporary abstract designs and Adinkra symbols in our exclusive ladies versatile scarves and mens pocket squares. On the other hand our detailed designs for our scarves and pockets squares are printed on 100% mulberry silk twill fabrics with hand rolled edge finish.",
+    "We hold nothing back in our unique bespoke pieces. The different combination of beads in our collection from across the continents makes Mira Elyse accessories a peerless creation designed to enhance your style or give out as gift to a loved one.",
   ]
 
   const whyChooseText = [
@@ -35,10 +35,10 @@ export default function Home() {
       />
 
       {/* Intro Text*/}
-      <div className="flex flex-col w-full items-center text-center py-20 text-slate-600">
+      <div className="flex flex-col items-center py-20 px-20">
         <p className="underline text-3xl pb-2">Ethos</p>
-        <div className="flex flex-col w-3/4 justify-center gap-3">{introText.map((text)=>{
-          return <p key={text}>{text}</p>
+        <div className="grid grid-cols-3 justify-center gap-10">{introText.map((text)=>{
+          return <div className="rounded-xl bg-slate-100 p-7 border border-slate-200 shadow-lg font-light" key={text}>{text}</div>
         })}</div>
       </div>
 
@@ -48,10 +48,10 @@ export default function Home() {
       </div>
 
       {/* Why Pick MiraElyse */}
-      <div className="flex flex-col w-full items-center text-center py-20 text-slate-600">
+      <div className="flex flex-col w-full items-center py-20 px-32">
         <p className="underline text-3xl pb-2">Why Choose MiraElyse</p>
-        <div className="flex flex-col w-3/4 justify-center gap-3">{whyChooseText.map((text)=>{
-          return <p key={text}>{text}</p>
+        <div className="grid grid-cols-4 justify-center gap-10">{whyChooseText.map((text)=>{
+          return <div className="rounded-xl bg-slate-100 p-7 border border-slate-200 shadow-lg font-light" key={text}>{text}</div>
         })}</div>
       </div>
 
