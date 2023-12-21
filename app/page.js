@@ -23,7 +23,7 @@ export default function Home() {
       <TopNavigation />
 
       {/* Ethos of Brand */}
-      <div className="grid lg:grid-cols-2 gap-5 px-10 lg:px-20 py-32 items-center">
+      <div className="grid lg:grid-cols-2 gap-5 px-10 lg:px-20 py-16 lg:py-32 items-center">
 
         <div className="flex flex-col gap-5">
           <div className="flex flex-row text-3xl lg:text-4xl font-bold justify-center">
@@ -66,7 +66,7 @@ export default function Home() {
       </div>
 
       {/* Slider div*/}
-      <div className="grid lg:grid-cols-2 bg-slate-100 py-32 items-center text-black">
+      <div className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black">
         <div>
           <SlideShow />
         </div>
@@ -93,12 +93,13 @@ export default function Home() {
       </div>
 
       {/* Elevate your style*/}
-      <div className="w-full py-32 px-10 lg:px-20">
+      <div className="w-full py-20 lg:py-32 px-10 lg:px-20">
         <div className="lg:text-4xl text-2xl flex flex-row font-bold justify-center pb-5 text-yellow-500">
           <p>ELEVATE</p>
           <p className="text-black">{"\u00a0"}YOUR STYLE </p>
         </div>
-        <div className="grid grid-cols-3 gap-4 place-items-center">
+        <div className="grid grid:cols-2 lg:grid-cols-3 gap-4 place-items-center">
+
           <Image
             className="brightness-75"
             src="/images/photo01.jpg"
@@ -122,7 +123,7 @@ export default function Home() {
             width={400}
           />
 
-          <div className="col-span-3 font-light text-sm lg:text-base">
+          <div className="lg:col-span-3 font-light text-sm lg:text-base">
             Mira Elyse accessories are intricately designed ladies versatile
             silk scarves, mens pocket squares, Murano glass cufflinks and
             handcrafted jewellery. Mira Elyse collection are designed and
