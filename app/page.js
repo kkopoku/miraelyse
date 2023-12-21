@@ -1,10 +1,24 @@
+"use client";
+
 import React from "react";
 import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 import SlideShow from "@/components/SlideShow";
 import Footer from "@/components/Footer";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-out-back",
+      offset: 120,
+      once: true,
+    });
+  }, []);
+
   const introText = [
     "Mira Elyse is dedicated to pushing the boundaries in Jewellery making and the design of our other accessories. We creatively integrate Murano Glass beads, Semi Precious stones, Swarovski beads, Freshwater Pearls, and other rare authentic beads into our jewelry through innovative design and craftsmanship.",
     "Also using different Ankara designs, contemporary abstract designs and Adinkra symbols in our exclusive ladies versatile scarves and mens pocket squares. On the other hand our detailed designs for our scarves and pockets squares are printed on 100% mulberry silk twill fabrics with hand rolled edge finish.",
@@ -23,8 +37,10 @@ export default function Home() {
       <TopNavigation />
 
       {/* Ethos of Brand */}
-      <div className="grid lg:grid-cols-2 gap-5 px-10 lg:px-20 py-16 lg:py-32 items-center">
-
+      <div
+        data-aos="fade-down"
+        className="grid lg:grid-cols-2 gap-5 px-10 lg:px-20 py-16 lg:py-32 items-center"
+      >
         <div className="flex flex-col gap-5">
           <div className="flex flex-row text-3xl lg:text-4xl font-bold justify-center">
             <p className="text-yellow-500">ETHOS </p> <p>{"\u00a0"}OF BRAND</p>
@@ -67,10 +83,10 @@ export default function Home() {
 
       {/* Slider div*/}
       <div className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black">
-        <div>
+        <div data-aos="fade-right">
           <SlideShow />
         </div>
-        <div className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5">
+        <div data-aos="fade-left" className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5">
           <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10 justify-center lg:justify-start">
             <p>WHY</p>
             <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE </p>
@@ -93,21 +109,20 @@ export default function Home() {
       </div>
 
       {/* Elevate your style*/}
-      <div className="w-full py-20 lg:py-32 px-10 lg:px-20">
+      <div data-aos="fade-down" className="w-full py-20 lg:py-32 px-10 lg:px-20">
         <div className="lg:text-4xl text-2xl flex flex-row font-bold justify-center pb-5 text-yellow-500">
           <p>ELEVATE</p>
           <p className="text-black">{"\u00a0"}YOUR STYLE </p>
         </div>
         <div className="grid grid:cols-2 lg:grid-cols-3 gap-4 place-items-center">
-
-          <Image
+          <Image data-aos="fade-right"
             className="brightness-75"
             src="/images/photo01.jpg"
             alt=""
             height={300}
             width={400}
           />
-          <Image
+          <Image data-aos="fade-left"
             className="brightness-75"
             src="/images/photo02.jpg"
             alt=""
@@ -115,7 +130,7 @@ export default function Home() {
             width={400}
           />
 
-          <Image
+          <Image data-aos="fade-right"
             className="brightness-75"
             src="/images/photo03.jpg"
             alt=""
@@ -145,8 +160,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full py-32 px-10 lg:px-20 items-center bg-slate-100">
-        <div className="lg:text-4xl text-2xl font-bold text-yellow-500">PACKAGING</div>
+      <div data-aos="fade-down" className="flex flex-col w-full py-32 px-10 lg:px-20 items-center bg-slate-100">
+        <div className="lg:text-4xl text-2xl font-bold text-yellow-500">
+          PACKAGING
+        </div>
         <div className="text-sm lg:text-base font-light">
           All products come in organza bags and are beautifully packaged in gift
           boxes or velvet pouches at point of sale.

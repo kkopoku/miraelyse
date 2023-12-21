@@ -1,8 +1,22 @@
+'use client'
 import TopNavigation from "@/components/TopNavigation";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function AboutPage() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-out-back",
+      offset: 120,
+      once: true,
+    });
+  }, []);
+
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
 
@@ -10,7 +24,7 @@ export default function AboutPage() {
 
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full min-h-screen items-center justify-center px-10 lg:px-20 gap-10">
 
-        <div className="flex flex-col gap-5">
+        <div data-aos="fade-right" className="flex flex-col gap-5">
           <p className="lg:text-4xl text-2xl font-bold">ABOUT US</p>
           <p className="text-sm lg:text-base font-light">
             My name is Agnes Essandoh, CEO, artisan and designer of the
@@ -35,7 +49,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className='grid grid-cols-3 gap-3'>
+        <div data-aos="fade-left" className='grid grid-cols-3 gap-3'>
         <Image
             className="brightness-75"
             src="/images/photo02.jpg"
