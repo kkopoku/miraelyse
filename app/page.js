@@ -26,8 +26,7 @@ export default function Home() {
       <div className="grid lg:grid-cols-2 gap-5 px-10 lg:px-20 py-32 items-center">
 
         <div className="flex flex-col gap-5">
-          <div className="flex flex-row text-3xl lg:text-4xl font-bold">
-            {" "}
+          <div className="flex flex-row text-3xl lg:text-4xl font-bold justify-center">
             <p className="text-yellow-500">ETHOS </p> <p>{"\u00a0"}OF BRAND</p>
           </div>
           <div className="flex flex-row text-sm lg:text-base font-light">
@@ -71,8 +70,8 @@ export default function Home() {
         <div>
           <SlideShow />
         </div>
-        <div className="flex flex-col gap-5">
-          <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10">
+        <div className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5">
+          <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10 justify-center lg:justify-start">
             <p>WHY</p>
             <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE </p>
           </div>

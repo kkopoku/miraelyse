@@ -5,12 +5,14 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
+
       <TopNavigation />
 
-      <div className="flex flex-row w-full min-h-screen items-center justify-center px-20 gap-10">
-        <div className="flex flex-col basis-1/2 gap-5">
-          <p className="text-4xl font-bold">ABOUT US</p>
-          <p className="font-light">
+      <div className="grid lg:grid-cols-2 grid-cols-1 w-full min-h-screen items-center justify-center px-10 lg:px-20 gap-10">
+
+        <div className="flex flex-col gap-5">
+          <p className="lg:text-4xl text-2xl font-bold">ABOUT US</p>
+          <p className="text-sm lg:text-base font-light">
             My name is Agnes Essandoh, CEO, artisan and designer of the
             accessory brand Mira Elyse.
             <br />
@@ -32,7 +34,8 @@ export default function AboutPage() {
             alternative to the usual “ Say it with colour and style “
           </p>
         </div>
-        <div className='basis-1/2 grid grid-cols-3 gap-3'>
+
+        <div className='grid grid-cols-3 gap-3'>
         <Image
             className="brightness-75"
             src="/images/photo02.jpg"
