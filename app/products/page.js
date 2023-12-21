@@ -50,12 +50,12 @@ export default function Login() {
             )}
 
             
-            <div data-aos="fade-up" className="flex bg-[url('/images/homepage-one-banner.jpg')] lg:h-[80vh] h-[50vh] items-center justify-center">
+            <div data-aos="fade-down" className="flex bg-[url('/images/homepage-one-banner.jpg')] lg:h-[80vh] h-[50vh] items-center justify-center">
                 <button onClick={()=>scrollToSection(necklacesRef)} className="lg:p-5 p-2 rounded-lg border-2 border-white hover:scale-110 font-medium text-white hover:bg-slate-200 hover:bg-opacity-40 bg-transparent transition-all text-base lg:text-2xl mt-20">Browse Catalog</button>
             </div>
 
             {/* Necklaces */}
-            <div data-aos="fade-right" ref={necklacesRef} className="flex flex-col w-full py-20 px-5 lg:px-32">
+            <div data-aos="fade-down" ref={necklacesRef} className="flex flex-col w-full py-20 px-5 lg:px-32">
                 <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">Necklaces</div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-5 lg:p-10">
                     {data.necklaces.map((item) =>
@@ -73,7 +73,7 @@ export default function Login() {
             </div>
 
             {/* Versatile Scarf */}
-            <div data-aos="fade-left" ref={versatileRef} className="flex flex-col w-full py-20 px-5 lg:px-32">
+            <div data-aos="fade-down" ref={versatileRef} className="flex flex-col w-full py-20 px-5 lg:px-32">
                 <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">Versatile Scarf</div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-10">
                     {data.versatileScarfs.map((item) =>
@@ -91,7 +91,7 @@ export default function Login() {
             </div>
 
             {/* Pocket Squares */}
-            <div data-aos="fade-right" ref={pocketRef} className="flex flex-col w-full py-20 px-5 lg:px-32">
+            <div data-aos="fade-down" ref={pocketRef} className="flex flex-col w-full py-20 px-5 lg:px-32">
                 <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">Pocket Squares</div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 bg-slate-100 border rounded-lg border-slate-300 p-10">
                     {data.pocketSquares.map((item) =>

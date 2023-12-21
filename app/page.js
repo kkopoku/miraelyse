@@ -57,7 +57,7 @@ export default function Home() {
 
         <TopNavigation />
 
-        <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md w-full lg:w-1/2 lg:mx-24 mx-10">
+        <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
           <div className="text-xs lg:text-base font-light lg:font-semibold">
             Welcome To MiraElyse
           </div>
@@ -148,11 +148,11 @@ export default function Home() {
         ref={why}
         className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black"
       >
-        <div data-aos="fade-right">
+        <div data-aos="fade-down">
           <SlideShow />
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-down"
           className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5"
         >
           <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10 justify-center lg:justify-start">
@@ -187,7 +187,7 @@ export default function Home() {
         </div>
         <div className="grid grid:cols-2 lg:grid-cols-3 gap-4 place-items-center">
           <Image
-            data-aos="fade-right"
+            data-aos="fade-down"
             className="brightness-75"
             src="/images/photo01.jpg"
             alt=""
@@ -195,7 +195,7 @@ export default function Home() {
             width={400}
           />
           <Image
-            data-aos="fade-left"
+            data-aos="fade-down"
             className="brightness-75"
             src="/images/photo02.jpg"
             alt=""
@@ -204,7 +204,7 @@ export default function Home() {
           />
 
           <Image
-            data-aos="fade-right"
+            data-aos="fade-down"
             className="brightness-75"
             src="/images/photo03.jpg"
             alt=""
