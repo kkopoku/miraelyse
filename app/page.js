@@ -53,48 +53,47 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
-      <div className="bg-[url('/images/homepage-one-banner.jpg')] lg:h-[90vh] h-auto">
+      <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[50vh] lg:h-[90vh] items-start gap-20 lg:gap-32">
+
         <TopNavigation />
-        <div className="flex flex-row bg-fixed items-center justify-start px-5 lg:px-32 h-full">
-          <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md lg:h-auto h-2/5 w-4/5 lg:1/2">
 
-            <div className="text-xs lg:text-base font-light lg:font-semibold">
-              Welcome To MiraElyse
-            </div>
+        <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md w-full lg:w-1/2 lg:mx-24 mx-10">
+          <div className="text-xs lg:text-base font-light lg:font-semibold">
+            Welcome To MiraElyse
+          </div>
 
-            <div className="lg:text-5xl text-lg font-extrabold w-2/3">
-              You asked for the best. Here we are
-            </div>
+          <div className="lg:text-5xl text-lg font-extrabold w-2/3">
+            You asked for the best. Here we are
+          </div>
 
-            <div className="flex lg:text-base text-xs font-light lg:font-medium h-20">
-              <Typewriter
-                options={{
-                  strings: typingText,
-                  autoStart: true,
-                  loop: true,
-                  delay: 40,
-                }}
-              />
-            </div>
+          <div className="flex lg:text-base text-xs font-light lg:font-medium h-20">
+            <Typewriter
+              options={{
+                strings: typingText,
+                autoStart: true,
+                loop: true,
+                delay: 40,
+              }}
+            />
+          </div>
 
-            <div className="flex flex-row gap-3 ">
-              <button
-                onClick={() => {
-                  scrollToSection(why);
-                }}
-                className="border border-white bg-white rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
-              >
-                Know More
-              </button>
-              <button
-                onClick={() => {
-                  router.push("/products");
-                }}
-                className="border border-black rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
-              >
-                Our Products
-              </button>
-            </div>
+          <div className="flex flex-row gap-3 ">
+            <button
+              onClick={() => {
+                scrollToSection(why);
+              }}
+              className="border border-white bg-white rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
+            >
+              Know More
+            </button>
+            <button
+              onClick={() => {
+                router.push("/products");
+              }}
+              className="border border-black rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
+            >
+              Our Products
+            </button>
           </div>
         </div>
       </div>
