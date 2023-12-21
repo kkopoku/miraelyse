@@ -23,13 +23,14 @@ export default function Home() {
       <TopNavigation />
 
       {/* Ethos of Brand */}
-      <div className="grid grid-cols-2 gap-5 px-20 py-32 items-center">
+      <div className="grid lg:grid-cols-2 gap-5 px-10 lg:px-20 py-32 items-center">
+
         <div className="flex flex-col gap-5">
-          <div className="flex flex-row text-4xl font-bold">
+          <div className="flex flex-row text-3xl lg:text-4xl font-bold">
             {" "}
             <p className="text-yellow-500">ETHOS </p> <p>{"\u00a0"}OF BRAND</p>
           </div>
-          <div className="flex flex-row font-light">
+          <div className="flex flex-row text-sm lg:text-base font-light">
             Original and Trendy, a must have defines the finely designed
             accessories. Mira Elyse is dedicated to pushing the boundaries in
             Jewellery making and designs in our scarves and pocket squares
@@ -46,6 +47,7 @@ export default function Home() {
             style whether elegant, smart or casual.
           </div>
         </div>
+
         <div className="grid grid-cols-2 gap-">
           <Image
             className="brightness-75"
@@ -65,16 +67,16 @@ export default function Home() {
       </div>
 
       {/* Slider div*/}
-      <div className="grid grid-cols-2 bg-slate-100 py-32 items-center text-black">
+      <div className="grid lg:grid-cols-2 bg-slate-100 py-32 items-center text-black">
         <div>
           <SlideShow />
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex flex-row text-4xl font-bold text-yellow-500">
+          <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10">
             <p>WHY</p>
             <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE </p>
           </div>
-          <div className="flex flex-row font-light pr-24">
+          <div className="flex flex-row text-sm lg:text-base font-light px-10 lg:pr-24">
             We use genuine authentic beads, antique silver or gold and stainless
             steel metal products for our accessories and the very best of the
             silk range fabrics, chiffon and polyester fabrics. Our Designs are
@@ -91,9 +93,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Why Pick MiraElyse */}
-      <div className="w-full py-32 px-20">
-        <div className="text-4xl flex flex-row font-bold justify-center pb-5 text-yellow-500">
+      {/* Elevate your style*/}
+      <div className="w-full py-32 px-10 lg:px-20">
+        <div className="lg:text-4xl text-2xl flex flex-row font-bold justify-center pb-5 text-yellow-500">
           <p>ELEVATE</p>
           <p className="text-black">{"\u00a0"}YOUR STYLE </p>
         </div>
@@ -121,7 +123,7 @@ export default function Home() {
             width={400}
           />
 
-          <div className="col-span-3 font-light">
+          <div className="col-span-3 font-light text-sm lg:text-base">
             Mira Elyse accessories are intricately designed ladies versatile
             silk scarves, mens pocket squares, Murano glass cufflinks and
             handcrafted jewellery. Mira Elyse collection are designed and
@@ -143,9 +145,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full py-32 px-20 items-center bg-slate-100">
-        <div className="text-4xl font-bold text-yellow-500">PACKAGING</div>
-        <div>
+      <div className="flex flex-col w-full py-32 px-10 lg:px-20 items-center bg-slate-100">
+        <div className="lg:text-4xl text-2xl font-bold text-yellow-500">PACKAGING</div>
+        <div className="text-sm lg:text-base font-light">
           All products come in organza bags and are beautifully packaged in gift
           boxes or velvet pouches at point of sale.
         </div>
