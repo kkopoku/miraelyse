@@ -6,10 +6,22 @@ import Image from "next/image";
 import SlideShow from "@/components/SlideShow";
 import Footer from "@/components/Footer";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Typewriter from "typewriter-effect";
+import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const why = useRef(null);
+  const router = useRouter();
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -32,9 +44,60 @@ export default function Home() {
     "Your purchase includes a label card detailing the diverse beads used in our accessories, offering a glimpse into the craftsmanship and variety we offer. Elevate your style with Mira Elyse – where every accessory is a work of art, designed to make a statement.",
   ];
 
+  const typingText = [
+    "We craft accessories using genuine beads, antique metals, and premium silk, chiffon, and polyester fabrics.",
+    "Our accessories are distinguished by meticulous craftsmanship, ensuring each piece is a blend of timeless elegance and contemporary style.",
+    "Authentic beads and antique metals infuse sophistication, complemented by premium silk, chiffon, and polyester fabrics that elevate both the visual and tactile aspects of the products.",
+    "The result is a collection of accessories that seamlessly marry quality materials with exquisite design, making a lasting statement in fashion.",
+  ];
+
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
-      <TopNavigation />
+      <div className="bg-[url('/images/homepage-one-banner.jpg')] lg:h-[90vh] h-[60vh]">
+        <TopNavigation />
+        <div className="flex flex-row bg-fixed items-center justify-start px-5 lg:px-32 h-full">
+          <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md lg:h-auto h-2/5 w-4/5 lg:1/2">
+
+            <div className="text-xs lg:text-base font-light lg:font-semibold">
+              Welcome To MiraElyse
+            </div>
+
+            <div className="lg:text-5xl text-lg font-extrabold w-2/3">
+              You asked for the best. Here we are
+            </div>
+
+            <div className="flex lg:text-base text-xs font-light lg:font-medium h-20">
+              <Typewriter
+                options={{
+                  strings: typingText,
+                  autoStart: true,
+                  loop: true,
+                  delay: 40,
+                }}
+              />
+            </div>
+
+            <div className="flex flex-row gap-3 ">
+              <button
+                onClick={() => {
+                  scrollToSection(why);
+                }}
+                className="border border-white bg-white rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
+              >
+                Know More
+              </button>
+              <button
+                onClick={() => {
+                  router.push("/products");
+                }}
+                className="border border-black rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
+              >
+                Our Products
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Ethos of Brand */}
       <div
@@ -42,7 +105,7 @@ export default function Home() {
         className="grid lg:grid-cols-2 gap-5 px-10 lg:px-20 py-16 lg:py-32 items-center"
       >
         <div className="flex flex-col gap-5">
-          <div className="flex flex-row text-3xl lg:text-4xl font-bold justify-center">
+          <div className="flex flex-row text-2xl lg:text-4xl font-bold justify-center">
             <p className="text-yellow-500">ETHOS </p> <p>{"\u00a0"}OF BRAND</p>
           </div>
           <div className="flex flex-row text-sm lg:text-base font-light">
@@ -82,11 +145,17 @@ export default function Home() {
       </div>
 
       {/* Slider div*/}
-      <div className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black">
+      <div
+        ref={why}
+        className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black"
+      >
         <div data-aos="fade-right">
           <SlideShow />
         </div>
-        <div data-aos="fade-left" className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5"
+        >
           <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10 justify-center lg:justify-start">
             <p>WHY</p>
             <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE </p>
@@ -109,20 +178,25 @@ export default function Home() {
       </div>
 
       {/* Elevate your style*/}
-      <div data-aos="fade-down" className="w-full py-20 lg:py-32 px-10 lg:px-20">
+      <div
+        data-aos="fade-down"
+        className="w-full py-20 lg:py-32 px-10 lg:px-20"
+      >
         <div className="lg:text-4xl text-2xl flex flex-row font-bold justify-center pb-5 text-yellow-500">
           <p>ELEVATE</p>
           <p className="text-black">{"\u00a0"}YOUR STYLE </p>
         </div>
         <div className="grid grid:cols-2 lg:grid-cols-3 gap-4 place-items-center">
-          <Image data-aos="fade-right"
+          <Image
+            data-aos="fade-right"
             className="brightness-75"
             src="/images/photo01.jpg"
             alt=""
             height={300}
             width={400}
           />
-          <Image data-aos="fade-left"
+          <Image
+            data-aos="fade-left"
             className="brightness-75"
             src="/images/photo02.jpg"
             alt=""
@@ -130,7 +204,8 @@ export default function Home() {
             width={400}
           />
 
-          <Image data-aos="fade-right"
+          <Image
+            data-aos="fade-right"
             className="brightness-75"
             src="/images/photo03.jpg"
             alt=""
@@ -138,7 +213,7 @@ export default function Home() {
             width={400}
           />
 
-          <div className="lg:col-span-3 font-light text-sm lg:text-base">
+          <div className="lg:col-span-3 font-light text-sm lg:text-base pt-5 lg:pt-0">
             Mira Elyse accessories are intricately designed ladies versatile
             silk scarves, mens pocket squares, Murano glass cufflinks and
             handcrafted jewellery. Mira Elyse collection are designed and
@@ -160,7 +235,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div data-aos="fade-down" className="flex flex-col w-full py-32 px-10 lg:px-20 items-center bg-slate-100">
+      <div
+        data-aos="fade-down"
+        className="flex flex-col w-full py-32 px-10 lg:px-20 items-center bg-slate-100"
+      >
         <div className="lg:text-4xl text-2xl font-bold text-yellow-500">
           PACKAGING
         </div>
