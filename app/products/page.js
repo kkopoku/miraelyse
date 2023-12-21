@@ -40,7 +40,7 @@ export default function Login() {
 
             
             <div className="flex bg-[url('/images/homepage-one-banner.jpg')] lg:h-[80vh] h-[50vh] items-center justify-center">
-                <button onClick={()=>scrollToSection(necklacesRef)} className="lg:p-5 p-2 rounded-lg border-2 border-white hover:scale-110 font-semibold text-white hover:bg-slate-200 hover:bg-opacity-40 bg-transparent transition-all text-base lg:text-2xl mt-20">Browse Catalog</button>
+                <button onClick={()=>scrollToSection(necklacesRef)} className="lg:p-5 p-2 rounded-lg border-2 border-white hover:scale-110 font-medium text-white hover:bg-slate-200 hover:bg-opacity-40 bg-transparent transition-all text-base lg:text-2xl mt-20">Browse Catalog</button>
             </div>
 
             {/* Necklaces */}

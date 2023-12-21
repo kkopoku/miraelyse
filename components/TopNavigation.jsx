@@ -27,6 +27,10 @@ export default function TopNavigation() {
       name: "Products",
       route: "/products",
     },
+    {
+      name: "Home",
+      route: "/",
+    },
   ];
 
   function isMobile() {
@@ -60,7 +64,7 @@ export default function TopNavigation() {
   };
 
   return (
-    <div className="flex sticky w-screen py-10 px-10 lg:px-20 bg-slate-50 z-10 font-semibold text-black">
+    <div className="flex sticky w-screen py-5 px-10 lg:px-20 bg-slate-50 z-10 font-semibold text-black">
       <div className="flex flex-row basis-1/5">
         <Logo />
       </div>
@@ -72,7 +76,7 @@ export default function TopNavigation() {
               {navItems.map((navItem) => {
                 return (
                   <Link href={navItem.route} key={navItem.route}>
-                    <button className="border border-black hover:scale-110 hover:bg-slate-200 transition-all rounded-md p-2">
+                    <button className="border border-black hover:scale-110 hover:bg-slate-200 transition-all font-light rounded-md p-2">
                       {navItem.name}
                     </button>
                   </Link>
