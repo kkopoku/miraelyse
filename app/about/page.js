@@ -18,7 +18,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col h-full text-black">
+    <main className="flex min-h-screen flex-col h-full text-black bg-slate-200">
 
       <TopNavigation />
 
