@@ -207,10 +207,10 @@ export default function Home() {
             versatile silk scarves, pocket squares, Murano glass cufflinks, and
             handcrafted jewelry. The collection, personally designed and
             handcrafted, features scarves and pocket squares made from 100% silk
-            twill with abstract and contemporary designs reflecting Ghana's rich
+            twill with abstract and contemporary designs reflecting Ghana&apos;s rich
             culture. Incorporating Adinkra symbols, Kente designs, and vibrant
             beads, the scarves are versatile for various styling options. The
-            men's pocket square doubles as a small neck scarf or cravat.
+            men&apos;s pocket square doubles as a small neck scarf or cravat.
             Cufflinks are crafted with colorful Murano millefiori beads and
             stainless steel. Genuine beads for jewelry are sourced globally,
             including Venetian glass, freshwater pearls, Swarovski crystals, and
