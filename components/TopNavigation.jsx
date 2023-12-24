@@ -76,7 +76,7 @@ export default function TopNavigation() {
               {navItems.map((navItem) => {
                 return (
                   <Link href={navItem.route} key={navItem.route}>
-                    <button className="hover:scale-110 transition-all font-normal rounded-md hover:font-semi-bold">
+                    <button className="hover:scale-125 transition-all font-normal rounded-md hover:font-semi-bold">
                       {navItem.name}
                     </button>
                   </Link>

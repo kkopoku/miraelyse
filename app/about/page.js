@@ -18,11 +18,11 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col bg-white h-full text-black">
+    <main className="flex min-h-screen flex-col h-full text-black">
 
       <TopNavigation />
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 w-full min-h-screen items-center justify-center px-10 lg:px-20 gap-10">
+      <div className="grid lg:grid-cols-2 grid-cols-1 w-full min-h-screen items-center justify-center px-10 lg:px-32 gap-10">
 
         <div data-aos="fade-right" className="flex flex-col gap-5">
           <p className="lg:text-4xl text-2xl font-bold">ABOUT US</p>

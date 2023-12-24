@@ -52,9 +52,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col bg-white h-full text-black">
-      <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[50vh] lg:h-[90vh] items-start gap-20 lg:gap-32">
-
+    <main className="flex min-h-screen flex-col bg-white h-full text-black font-Roboto">
+      
+      <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[50vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
         <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
@@ -82,7 +82,7 @@ export default function Home() {
               onClick={() => {
                 scrollToSection(why);
               }}
-              className="border border-white bg-white rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
+              className="border border-white bg-white rounded-full lg:text-base text-xs w-36 py-3 hover:scale-110 transition-all"
             >
               Know More
             </button>
@@ -90,7 +90,7 @@ export default function Home() {
               onClick={() => {
                 router.push("/products");
               }}
-              className="border border-black rounded-full lg:text-base text-xs w-36 py-2 hover:scale-110 transition-all"
+              className="border border-black rounded-full lg:text-base text-xs w-36 py-3 hover:scale-110 transition-all"
             >
               Our Products
             </button>
@@ -105,36 +105,29 @@ export default function Home() {
       >
         <div className="flex flex-col gap-5">
           <div className="flex flex-row text-2xl lg:text-4xl font-bold justify-center">
-            <p className="text-yellow-500">ETHOS </p> <p>{"\u00a0"}OF BRAND</p>
+            <p className="text-yellow-500">WHO </p> <p>{"\u00a0"}ARE WE?</p>
           </div>
-          <div className="flex flex-row text-sm lg:text-base font-light">
-            Original and Trendy, a must have defines the finely designed
-            accessories. Mira Elyse is dedicated to pushing the boundaries in
-            Jewellery making and designs in our scarves and pocket squares
-            Through our innovation in design and craftsmanship, we explore new
-            frontiers by combining different kinds of beads such as Murano Glass
-            beads, Semi Precious stones, Tagua nut beads, Swarovski crystal
-            beads, Coral beads, Freshwater Pearls and other authentic rare beads
-            in our jewellery designs. We incorporate into the artwork of our
-            exclusive ladies versatile scarves and mens pocket squares designs
-            such as Traditional African textile designs, contemporary and
-            abstract designs, Kente designs and Adinkra symbols to mention a
-            few. We hold nothing back in our unique bespoke pieces thus making
-            Mira Elyse accessories a peerless creation, designed to enhance any
-            style whether elegant, smart or casual.
+          <div className="flex flex-row text-sm lg:text-base font-light text-slate-800">
+            Mira Elyse is a trendsetting brand offering must-have accessories,
+            dedicated to pushing boundaries in jewelry making. Our scarves and
+            pocket squares showcase innovative design and craftsmanship,
+            incorporating various beads like Murano Glass, Semi Precious stones,
+            and more. Featuring diverse designs, including Traditional African
+            textiles and Adinkra symbols, our accessories stand out as peerless
+            creations, enhancing styles from elegant to casual.
           </div>
         </div>
 
         <div className="grid grid-cols-2 gap-">
           <Image
-            className="brightness-75"
+            className="brightness-75 rounded-lg"
             src="/images/carousel09.jpg"
             alt=""
             height={300}
             width={300}
           />
           <Image
-            className="brightness-75"
+            className="brightness-75 rounded-lg"
             src="/images/carousel10.jpg"
             alt=""
             height={300}
@@ -157,21 +150,18 @@ export default function Home() {
         >
           <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10 justify-center lg:justify-start">
             <p>WHY</p>
-            <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE </p>
+            <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE?</p>
           </div>
-          <div className="flex flex-row text-sm lg:text-base font-light px-10 lg:pr-24">
-            We use genuine authentic beads, antique silver or gold and stainless
-            steel metal products for our accessories and the very best of the
-            silk range fabrics, chiffon and polyester fabrics. Our Designs are
-            unique and delicately handcrafted. We make limited quantities for
-            all our accessories. Our jewellery is nicely packaged in organza
-            bags and come in either a mira elyse gift box or velvet pouches at
-            point of sale. Also exquisitely packaged are the ladies versatile
-            scarves and mens pocket squares and handcrafted Murano glass
-            cufflinks which come in Mira elyse gift boxes and bags and velvet
-            pouches Included in each package is a generic label card detailing
-            the different beads and other materials used in our accessories, and
-            our product range.
+          <div className="flex flex-row text-xs lg:text-base text-slate-800 font-light px-10 lg:pr-24">
+            We craft our accessories using genuine beads, antique silver or
+            gold, and stainless steel metals, paired with the finest silk range
+            fabrics, chiffon, and polyester. Each design is unique and
+            delicately handcrafted, produced in limited quantities. Our jewelry,
+            scarves, pocket squares, and Murano glass cufflinks are elegantly
+            packaged in organza bags, Mira Elyse gift boxes or velvet pouches at
+            the point of sale. Each package includes a generic label card
+            detailing the materials used in our accessories and showcases our
+            diverse product range.
           </div>
         </div>
       </div>
@@ -188,7 +178,7 @@ export default function Home() {
         <div className="grid grid:cols-2 lg:grid-cols-3 gap-4 place-items-center">
           <Image
             data-aos="fade-down"
-            className="brightness-75"
+            className="brightness-75 rounded-xl"
             src="/images/photo01.jpg"
             alt=""
             height={300}
@@ -196,7 +186,7 @@ export default function Home() {
           />
           <Image
             data-aos="fade-down"
-            className="brightness-75"
+            className="brightness-75 rounded-xl"
             src="/images/photo02.jpg"
             alt=""
             height={300}
@@ -205,31 +195,26 @@ export default function Home() {
 
           <Image
             data-aos="fade-down"
-            className="brightness-75"
+            className="brightness-75 rounded-xl"
             src="/images/photo03.jpg"
             alt=""
             height={300}
             width={400}
           />
 
-          <div className="lg:col-span-3 font-light text-sm lg:text-base pt-5 lg:pt-0">
-            Mira Elyse accessories are intricately designed ladies versatile
-            silk scarves, mens pocket squares, Murano glass cufflinks and
-            handcrafted jewellery. Mira Elyse collection are designed and
-            handcrafted by me. Scarves and pocket squares are made with 100%
-            silk twill fabric with hand rolled finished edges. The designs,
-            though abstract and contemporary, also reflects the unique rich
-            culture and heritage of Ghana. Incorporated also into our collection
-            are Adinkra symbols, delicately woven Kente designs, colourful
-            traditional African textile designs and the distinctive vibrant
-            beads Scarves are versatile and can also be worn as a head scarf or
-            an accessory to handbags. The men’s pocket square can also be used
-            as a small neck scarf or worn as a cravat. Cufflinks are made with
-            the colourful Murano millefiori beads and stainless steel metals. A
-            beautiful piece of accessories for both men and women. Genuine and
-            authentic beads for our jewellery pieces are sourced from different
-            Continents, these includes Venetian glass beads, freshwater pearls,
-            Swarovski crystal beads and semi precious stones to name a few.
+          <div className="lg:col-span-3 font-light text-sm lg:text-base text-slate-800 pt-8">
+            Mira Elyse offers intricately designed accessories, including
+            versatile silk scarves, pocket squares, Murano glass cufflinks, and
+            handcrafted jewelry. The collection, personally designed and
+            handcrafted, features scarves and pocket squares made from 100% silk
+            twill with abstract and contemporary designs reflecting Ghana's rich
+            culture. Incorporating Adinkra symbols, Kente designs, and vibrant
+            beads, the scarves are versatile for various styling options. The
+            men's pocket square doubles as a small neck scarf or cravat.
+            Cufflinks are crafted with colorful Murano millefiori beads and
+            stainless steel. Genuine beads for jewelry are sourced globally,
+            including Venetian glass, freshwater pearls, Swarovski crystals, and
+            semi-precious stones.
           </div>
         </div>
       </div>
@@ -241,7 +226,7 @@ export default function Home() {
         <div className="lg:text-4xl text-2xl font-bold text-yellow-500">
           PACKAGING
         </div>
-        <div className="text-sm lg:text-base font-light">
+        <div className="text-sm lg:text-base text-slate-800 font-light">
           All products come in organza bags and are beautifully packaged in gift
           boxes or velvet pouches at point of sale.
         </div>
