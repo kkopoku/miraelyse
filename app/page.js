@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-">
+        <div className="grid grid-cols-2 gap-2">
           <Image
             className="brightness-75 rounded-lg"
             src="/images/carousel09.jpg"
