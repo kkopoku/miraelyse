@@ -53,8 +53,8 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black font-Roboto">
-      
-      <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[50vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
+
+      <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
         <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
