@@ -39,11 +39,11 @@ export default function Login() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
-      <div className="flex flex-col bg-[url('/images/photo04.jpg')] bg-cover h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
+      <div className="flex flex-col bg-[url('/images/products_banner.jpg')] bg-cover h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
-        <div className="flex flex-col bg-transparent bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
-          <div className="text-base lg:text-base font-semibold">
+        <div className="flex flex-col bg-transparent bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10 text-white">
+          <div className="te1xt-base lg:text-base font-semibold">
             Welcome To Our Products Catalog
           </div>
 
@@ -60,7 +60,7 @@ export default function Login() {
               onClick={() => {
                 scrollToSection(necklacesRef);
               }}
-              className="border border-black bg-opacity-25 bg-white rounded-full lg:text-base text-sm px-4 py-2 lg:py-3 hover:scale-110 transition-all"
+              className="border border-white bg-opacity-25 bg-white rounded-full lg:text-base text-sm px-4 py-2 lg:py-3 hover:scale-110 transition-all"
             >
               Browse Catalog
             </button>

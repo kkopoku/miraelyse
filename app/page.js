@@ -56,7 +56,7 @@ export default function Home() {
       <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
-        <div className="flex flex-col bg-transparent bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
+        <div className="flex flex-col bg-transparent bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10 text-white">
           <div className="text-base lg:text-base font-semibold">
             Welcome To MiraElyse
           </div>
@@ -81,7 +81,7 @@ export default function Home() {
               onClick={() => {
                 scrollToSection(why);
               }}
-              className="border border-white bg-white rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all"
+              className="border border-white bg-white rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all text-black"
             >
               Know More
             </button>
@@ -89,7 +89,7 @@ export default function Home() {
               onClick={() => {
                 router.push("/products");
               }}
-              className="border border-black bg-white bg-opacity-25 rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all"
+              className="border border-white bg-white bg-opacity-25 rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all"
             >
               Our Products
             </button>
