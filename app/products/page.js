@@ -39,7 +39,7 @@ export default function Login() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
-      <div className="flex flex-col bg-[url('/images/photo09.jpg')] bg-cover h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
+      <div className="flex flex-col bg-[url('/images/photo04.jpg')] bg-cover h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
         <div className="flex flex-col bg-transparent bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
