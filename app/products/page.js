@@ -60,7 +60,7 @@ export default function Login() {
               onClick={() => {
                 scrollToSection(necklacesRef);
               }}
-              className="border border-black bg-transparent rounded-full lg:text-base text-sm px-4 py-2 lg:py-3 hover:scale-110 transition-all"
+              className="border border-black bg-opacity-25 bg-white rounded-full lg:text-base text-sm px-4 py-2 lg:py-3 hover:scale-110 transition-all"
             >
               Browse Catalog
             </button>

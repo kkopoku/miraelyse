@@ -89,7 +89,7 @@ export default function Home() {
               onClick={() => {
                 router.push("/products");
               }}
-              className="border border-black rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all"
+              className="border border-black bg-white bg-opacity-25 rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all"
             >
               Our Products
             </button>
