@@ -42,16 +42,16 @@ export default function Login() {
       <div className="flex flex-col bg-[url('/images/photo07.jpg')] bg-cover h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
-        <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
-          <div className="text-xs lg:text-base font-light lg:font-semibold">
+        <div className="flex flex-col bg-transparent bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
+          <div className="text-base lg:text-base font-semibold">
             Welcome To Our Products Catalog
           </div>
 
-          <div className="lg:text-5xl text-lg font-extrabold w-2/3">
+          <div className="lg:text-5xl text-3xl font-extrabold">
             Quality African Products
           </div>
 
-          <div className="flex lg:text-base text-xs font-light lg:font-medium py-3">
+          <div className="flex text-base font-medium py-3">
             Browse from our various categories
           </div>
 
@@ -60,7 +60,7 @@ export default function Login() {
               onClick={() => {
                 scrollToSection(necklacesRef);
               }}
-              className="border border-black bg-transparent rounded-xl lg:text-base text-xs px-4 py-2 lg:py-3 hover:scale-110 transition-all"
+              className="border border-black bg-transparent rounded-full lg:text-base text-sm px-4 py-2 lg:py-3 hover:scale-110 transition-all"
             >
               Browse Catalog
             </button>

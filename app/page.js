@@ -57,16 +57,16 @@ export default function Home() {
       <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
-        <div className="flex flex-col bg-white bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
-          <div className="text-xs lg:text-base font-light lg:font-semibold">
+        <div className="flex flex-col bg-transparent bg-opacity-50 lg:p-20 p-5 rounded-md lg:w-1/2 lg:mx-24 mx-10">
+          <div className="text-base lg:text-base font-semibold">
             Welcome To MiraElyse
           </div>
 
-          <div className="lg:text-5xl text-lg font-extrabold w-2/3">
+          <div className="lg:text-5xl text-3xl font-extrabold w-2/3">
             You asked for the best. Here we are
           </div>
 
-          <div className="flex lg:text-base text-xs font-light lg:font-medium h-20">
+          <div className="flex text-base font-medium min-h-[100px]">
             <Typewriter
               options={{
                 strings: typingText,
@@ -82,7 +82,7 @@ export default function Home() {
               onClick={() => {
                 scrollToSection(why);
               }}
-              className="border border-white bg-white rounded-full lg:text-base text-xs w-36 py-3 hover:scale-110 transition-all"
+              className="border border-white bg-white rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all"
             >
               Know More
             </button>
@@ -90,7 +90,7 @@ export default function Home() {
               onClick={() => {
                 router.push("/products");
               }}
-              className="border border-black rounded-full lg:text-base text-xs w-36 py-3 hover:scale-110 transition-all"
+              className="border border-black rounded-full lg:text-base text-sm w-36 py-3 hover:scale-110 transition-all"
             >
               Our Products
             </button>
@@ -136,23 +136,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Slider div*/}
-      <div
-        ref={why}
-        className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black"
-      >
+      {/* Why Choose MiraElyse */}
+      <div ref={why} className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black">
+
         <div data-aos="fade-down">
           <SlideShow />
         </div>
-        <div
-          data-aos="fade-down"
-          className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5"
-        >
+
+        <div data-aos="fade-down" className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5">
           <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10 justify-center lg:justify-start">
             <p>WHY</p>
             <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE?</p>
           </div>
-          <div className="flex flex-row text-xs lg:text-base text-slate-800 font-light px-10 lg:pr-24">
+          <div className="flex flex-row text-sm lg:text-base text-slate-800 font-light px-10 lg:pr-24">
             We craft our accessories using genuine beads, antique silver or
             gold, and stainless steel metals, paired with the finest silk range
             fabrics, chiffon, and polyester. Each design is unique and
@@ -164,6 +160,7 @@ export default function Home() {
             diverse product range.
           </div>
         </div>
+
       </div>
 
       {/* Elevate your style*/}
