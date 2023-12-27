@@ -53,7 +53,6 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black font-Roboto">
-
       <div className="flex flex-col bg-[url('/images/homepage-one-banner.jpg')] h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
         <TopNavigation />
 
@@ -68,10 +67,10 @@ export default function Home() {
 
           <div className="flex text-base font-medium min-h-[100px]">
             <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString(typingText[0]).start()
+              }}
               options={{
-                strings: typingText,
-                autoStart: true,
-                loop: true,
                 delay: 40,
               }}
             />
@@ -137,13 +136,18 @@ export default function Home() {
       </div>
 
       {/* Why Choose MiraElyse */}
-      <div ref={why} className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black">
-
+      <div
+        ref={why}
+        className="grid lg:grid-cols-2 bg-slate-100 py-20 lg:py-32 items-center text-black"
+      >
         <div data-aos="fade-down">
           <SlideShow />
         </div>
 
-        <div data-aos="fade-down" className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5">
+        <div
+          data-aos="fade-down"
+          className="flex flex-col gap-2 lg:gap-5 lg:pb-0 pt-5"
+        >
           <div className="flex flex-row text-2xl lg:text-4xl font-bold text-yellow-500 px-10 justify-center lg:justify-start">
             <p>WHY</p>
             <p className="text-black">{"\u00a0"}CHOOSE MIRAELYSE?</p>
@@ -160,7 +164,6 @@ export default function Home() {
             diverse product range.
           </div>
         </div>
-
       </div>
 
       {/* Elevate your style*/}
@@ -204,14 +207,14 @@ export default function Home() {
             versatile silk scarves, pocket squares, Murano glass cufflinks, and
             handcrafted jewelry. The collection, personally designed and
             handcrafted, features scarves and pocket squares made from 100% silk
-            twill with abstract and contemporary designs reflecting Ghana&apos;s rich
-            culture. Incorporating Adinkra symbols, Kente designs, and vibrant
-            beads, the scarves are versatile for various styling options. The
-            men&apos;s pocket square doubles as a small neck scarf or cravat.
-            Cufflinks are crafted with colorful Murano millefiori beads and
-            stainless steel. Genuine beads for jewelry are sourced globally,
-            including Venetian glass, freshwater pearls, Swarovski crystals, and
-            semi-precious stones.
+            twill with abstract and contemporary designs reflecting Ghana&apos;s
+            rich culture. Incorporating Adinkra symbols, Kente designs, and
+            vibrant beads, the scarves are versatile for various styling
+            options. The men&apos;s pocket square doubles as a small neck scarf
+            or cravat. Cufflinks are crafted with colorful Murano millefiori
+            beads and stainless steel. Genuine beads for jewelry are sourced
+            globally, including Venetian glass, freshwater pearls, Swarovski
+            crystals, and semi-precious stones.
           </div>
         </div>
       </div>
