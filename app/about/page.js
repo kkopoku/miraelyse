@@ -24,7 +24,7 @@ export default function AboutPage() {
 
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full min-h-screen items-center justify-center px-10 lg:px-32 gap-10">
 
-        <div data-aos="fade-right" className="flex flex-col gap-5">
+        <div data-aos="fade-right" className="flex flex-col gap-5 pt-10 lg:pt-0">
           <p className="lg:text-4xl text-2xl font-bold">ABOUT US</p>
           <p className="text-sm lg:text-base font-light">
             My name is Agnes Essandoh, CEO, artisan and designer of the
@@ -41,7 +41,7 @@ export default function AboutPage() {
             imagination and creativity, an opportunity to incorporate into our
             pieces the uniqueness of my Ghanaian heritage and designs from other
             Continents. My objective is to make limited quantities per design
-            for any of the collection, in order to maintain the brand’s
+            for any of the collection, in order to maintain the brand&apos;s
             exclusivity.
             <br />
             Mira Elyse products are original, contemporary and vibrant. An
