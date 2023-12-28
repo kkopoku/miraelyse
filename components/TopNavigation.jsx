@@ -76,7 +76,7 @@ export default function TopNavigation() {
               {navItems.map((navItem) => {
                 return (
                   <Link href={navItem.route} key={navItem.route}>
-                    <button className="hover:scale-125 transition-all font-normal rounded-md hover:font-semi-bold hover:text-white">
+                    <button className="hover:scale-125 transition-all font-normal rounded-md hover:font-semi-bold text-white">
                       {navItem.name}
                     </button>
                   </Link>
@@ -85,7 +85,7 @@ export default function TopNavigation() {
             </>
           ) : (
             <button onClick={() => setIsMobileMenuOpen(true)}>
-              <IoMenuOutline className="text-3xl" />
+              <IoMenuOutline className="text-3xl text-white" />
             </button>
           )}
         </div>

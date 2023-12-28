@@ -9,7 +9,7 @@ export default function Logo() {
         <p>Mira</p>
         <p className="text-yellow-500">Elyse</p>
       </div> */}
-      <Image src='/images/ME-logo.png' alt='ME-logo' width={100} height={100} />
+      <Image src='/images/ME-logo-white.png' alt='ME-logo' width={100} height={100} />
     </Link>
   );
 }
