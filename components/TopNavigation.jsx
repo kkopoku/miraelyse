@@ -45,7 +45,7 @@ export default function TopNavigation() {
     return (
       <div
         onClick={() => setIsMobileMenuOpen(false)}
-        className="flex fixed inset-0 z-40 flex-col bg-white bg-opacity-95 justify-center items-center gap-6 font-medium text-xl"
+        className="flex fixed inset-0 z-40 flex-col-reverse bg-white bg-opacity-95 justify-center items-center gap-6 font-medium text-xl"
       >
         {navItems.map((button) => (
           <button
