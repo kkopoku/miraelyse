@@ -10,7 +10,8 @@ export default function Modal ({data, closeModal}){
                     <Image alt="" className="lg:h-[300px] h-[220px] rounded-lg" width={250} height={300} src={data.src}/>
                 </div>
                 <p className="lg:text-base font-semibold">{data.name}</p>
-                <p className="lg:text-base text-xs">{data.description}</p>
+                {data.category && (<p className="lg:text-sm text-xs"><span className="font-bold">Category:</span> {data.category}</p>)}
+                <p className="lg:text-sm text-xs"><span className="font-bold">Description:</span> {data.description}</p>
             </div>
         </div>
     )

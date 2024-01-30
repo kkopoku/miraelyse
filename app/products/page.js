@@ -37,6 +37,27 @@ export default function Login() {
     }
   };
 
+  const LoadingContent = () => {
+    return (
+      <div class="animate-pulse flex-1 space-y-6">
+        <div class="h-2 bg-slate-200 rounded"></div>
+        <div class="space-y-3">
+          <div class="grid grid-cols-3 gap-4">
+            <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+            <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+          </div>
+          <div class="h-2 bg-slate-200 rounded"></div>
+          <div class="h-2 bg-slate-200 rounded"></div>
+          <div class="h-2 bg-slate-200 rounded"></div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+            <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <main className="flex min-h-screen flex-col bg-white h-full text-black">
       <div className="flex flex-col bg-[url('/images/products_banner.jpg')] bg-cover h-[60vh] lg:h-[90vh] items-start gap-20 lg:gap-32 rounded-b-2xl">
@@ -64,7 +85,6 @@ export default function Login() {
             >
               Browse Catalog
             </button>
-
           </div>
         </div>
       </div>
@@ -134,7 +154,7 @@ export default function Login() {
           ))}
         </div>
       </div>
-      
+
       {/* Pocket Squares */}
       <div
         data-aos="fade-down"
@@ -164,6 +184,75 @@ export default function Login() {
               <p className="lg:text-base text-xs">{item.name}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Earrings */}
+      <div
+        data-aos="fade-down"
+        ref={pocketRef}
+        className="flex flex-col w-full py-20 px-5 lg:px-32"
+      >
+        <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">
+          Earrings
+        </div>
+
+        <div className="flex flex-col bg-slate-100 border rounded-lg border-slate-300 p-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 w-full">
+            <LoadingContent />
+            <LoadingContent />
+            <LoadingContent />
+            <LoadingContent />
+          </div>
+          <div className="text-slate-500 text-center pt-2 animate-pulse">
+            ... COMING SOON
+          </div>
+        </div>
+      </div>
+
+      {/* Versatile Scarfs */}
+      <div
+        data-aos="fade-down"
+        ref={pocketRef}
+        className="flex flex-col w-full py-20 px-5 lg:px-32"
+      >
+        <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">
+          Versatile Scarfs
+        </div>
+
+        <div className="flex flex-col bg-slate-100 border rounded-lg border-slate-300 p-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 w-full">
+            <LoadingContent />
+            <LoadingContent />
+            <LoadingContent />
+            <LoadingContent />
+          </div>
+          <div className="text-slate-500 text-center pt-2 animate-pulse">
+            ... COMING SOON
+          </div>
+        </div>
+      </div>
+
+      {/* Cufflinks */}
+      <div
+        data-aos="fade-down"
+        ref={pocketRef}
+        className="flex flex-col w-full py-20 px-5 lg:px-32"
+      >
+        <div className="flex flex-row items-center justify-center text-2xl font-semibold pb-5">
+          Cufflinks
+        </div>
+
+        <div className="flex flex-col bg-slate-100 border rounded-lg border-slate-300 p-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 w-full">
+            <LoadingContent />
+            <LoadingContent />
+            <LoadingContent />
+            <LoadingContent />
+          </div>
+          <div className="text-slate-500 text-center pt-2 animate-pulse">
+            ... COMING SOON
+          </div>
         </div>
       </div>
 
